@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>模板</title>
+    <meta charset="UTF-8">
+    <!--适应移动设备宽度，确保适当的绘制和触屏缩放;1.0初始加载时1：1，不缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+        maximum-scale=1.0 ,user-scalable=no,shrink-to-fit=no"><!--双击可否快速缩放user-scalable-->
+    <!-- 引入 Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<!--固定宽度-->
+<div class="container">
+    <h1>container 固定宽度</h1>
+    <p>这是一些文本。</p>
+    <img src="http://pic19.nipic.com/20120210/7827303_221233267358_2.jpg"
+         class="img-responsive" alt="响应式图像" style="max-width: 100%;">
+</div>
+<!--100%-->
+<div class="container-fluid">
+    <h1>container-fluid 100%宽度</h1>
+    <p>使用了 .container-fluid，100% 宽度，占据全部视口（viewport）的容器。</p>
+</div>
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

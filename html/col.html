@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列分布网格 row & col</title>
+    <meta charset="UTF-8">
+    <!--适应移动设备宽度，确保适当的绘制和触屏缩放;1.0初始加载时1：1，不缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+        maximum-scale=1.0 ,user-scalable=no,shrink-to-fit=no"><!--双击可否快速缩放user-scalable-->
+    <!-- 引入 Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .row-col .row .col-2{
+            border: solid 1px salmon;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 第一个例子：控制列的宽度及在不同的设备上如何显示 -->
+    <div class="row">
+        <div class="col-12">默认可分12列，col s m l x,适用不同规格屏幕</div>
+    </div>
+    <div class="row">
+        <div class="col-4">3</div>
+        <div class="col-4">3</div>
+        <div class="col-4">3</div>
+    </div>
+
+    <!-- 第二个例子：或让 Bootstrap 者自动处理布局 -->
+    <div class="row" style="border: solid 1px #b8a3c7">
+        <div class="col-12">根据列数自动分布平均分布剩余的宽度，流体布局</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+        <div class="col">自动</div>
+    </div>
+    <div class="row-col">
+        <div class="row">
+            <div class="col-2">对角</div>
+            <div class="col-2">标题一</div>
+            <div class="col-2">标题二</div>
+            <div class="col-2">标题三</div>
+            <div class="col-2">标题四</div>
+            <div class="col-2">标题五</div>
+        </div>
+        <div class="row">
+            <div class="col-2">序号1</div>
+            <div class="col-2">内容一</div>
+            <div class="col-2">内容二</div>
+            <div class="col-2">内容三</div>
+            <div class="col-2">内容四</div>
+            <div class="col-2">内容五</div>
+        </div>
+        <div class="row">
+            <div class="col-2">序号2</div>
+            <div class="col-2">内容一</div>
+            <div class="col-2">内容二</div>
+            <div class="col-2">内容三</div>
+            <div class="col-2">内容四</div>
+            <div class="col-2">内容五</div>
+        </div>
+        <div class="row">
+            <div class="col-2">序号3</div>
+            <div class="col-2">内容一</div>
+            <div class="col-2">内容二</div>
+            <div class="col-2">内容三</div>
+            <div class="col-2">内容四</div>
+            <div class="col-2">内容五</div>
+        </div>
+        <div class="row">
+            <div class="col-2">序号4</div>
+            <div class="col-2">内容一</div>
+            <div class="col-2">内容二</div>
+            <div class="col-2">内容三</div>
+            <div class="col-2">内容四</div>
+            <div class="col-2">内容五</div>
+        </div>
+        <div class="row">
+            <div class="col-2">序号5</div>
+            <div class="col-2">内容一</div>
+            <div class="col-2">内容二</div>
+            <div class="col-2">内容三</div>
+            <div class="col-2">内容四</div>
+            <div class="col-2">内容五</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
+            同时用几个不同规格屏幕的类
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1 offset-sm-1">偏移sm</div>
+        <div class="col-md-2 offset-md-2">偏移md</div>
+        <div class="col-lg-3 offset-lg-3">偏移lg</div>
+        <div class="col-xl-4 offset-xl-4">偏移xl</div>
+    </div>
+</div>
+</body>
+</html>
